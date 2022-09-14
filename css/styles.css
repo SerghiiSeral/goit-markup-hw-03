@@ -40,7 +40,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
 }
 
 .section {
@@ -125,13 +125,18 @@ img {
   background-color: var(--header-bg-color);
   padding-top: 24px;
   padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #2196f3;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.logo-link {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.header-connect {
+  /* margin-left: auto; */
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .logo {
@@ -141,6 +146,14 @@ img {
 
 .topLogo {
   color: var(--main-text-color);
+}
+
+.logo-link {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .menu-item {
@@ -164,7 +177,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 50px;
+
   color: #757575;
 }
 
@@ -179,29 +192,16 @@ img {
   margin-top: 1px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.header-connect {
-  margin-left: auto;
-}
-
-.logo-link {
-  margin-right: 93px;
-}
-
 /*------------------HERO------------------------*/
 
 .hero {
   background-color: var(--hero-bg-color);
   color: var(--hero-text-color);
-  width: 1200px;
+  max-width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
 
   text-align: center;
 }
@@ -244,6 +244,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 
   color: #757575;
 }
@@ -253,8 +254,6 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
 
   color: #212121;
 }
@@ -264,8 +263,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 
   color: #757575;
 }
@@ -281,13 +278,17 @@ img {
 
 .filter {
   text-align: center;
-  pading-top: 94px;
 }
 
 .work-img {
   margin-top: 50px;
   display: flex;
   gap: 30px;
+}
+
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-img {
@@ -299,20 +300,19 @@ img {
 }
 .card-portfolio {
   box-sizing: border-box;
-  width: 370px;
-  height: 404px;
   left: 215px;
   top: 262px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  margin-bottom: 94px;
+  padding: 20px 24px;
 }
 
 /*------------------TEAM-------------------------*/
 
 .team {
   background-color: var(--team-background-color);
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -330,10 +330,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 30px;
-}
-.position {
-  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 .position {
@@ -352,13 +349,16 @@ img {
   gap: 30px;
 }
 
+.teammate {
+  padding: 30px 30px;
+}
+
 .card {
   width: 270px;
   height: 368px;
   left: 515px;
   top: 1632px;
   text-align: center;
-  margin-bottom: 94px;
 
   background: #ffffff;
   /* material shadow v1 */
@@ -370,6 +370,7 @@ img {
 /*--------------------FOOTER-----------------*/
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer {
@@ -380,12 +381,19 @@ address {
   font-family: 'Raleway';
   color: var(--hero-text-color);
 }
+.logo-link-bottom {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 
 .adress-bottom-item {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 
 .e-mail {
@@ -393,6 +401,7 @@ address {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 .phone {
   font-size: 14px;
